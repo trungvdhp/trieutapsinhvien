@@ -88,7 +88,7 @@
             this.label1.ForeColor = System.Drawing.Color.DarkRed;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(812, 56);
+            this.label1.Size = new System.Drawing.Size(850, 56);
             this.label1.TabIndex = 73;
             this.label1.Text = resources.GetString("label1.Text");
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -155,7 +155,7 @@
             this.dgvThoiKhoaBieu.Name = "dgvThoiKhoaBieu";
             this.dgvThoiKhoaBieu.ReadOnly = true;
             this.dgvThoiKhoaBieu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvThoiKhoaBieu.Size = new System.Drawing.Size(812, 484);
+            this.dgvThoiKhoaBieu.Size = new System.Drawing.Size(850, 484);
             this.dgvThoiKhoaBieu.TabIndex = 75;
             // 
             // colMaLopHP
@@ -266,7 +266,7 @@
             this.txtTuKhoa.Location = new System.Drawing.Point(3, 2);
             this.txtTuKhoa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTuKhoa.Name = "txtTuKhoa";
-            this.txtTuKhoa.Size = new System.Drawing.Size(803, 23);
+            this.txtTuKhoa.Size = new System.Drawing.Size(841, 23);
             this.txtTuKhoa.TabIndex = 0;
             this.txtTuKhoa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtTuKhoa.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtTuKhoa_KeyDown);
@@ -308,7 +308,7 @@
             this.bdnThoiKhoaBieu.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bdnThoiKhoaBieu.Name = "bdnThoiKhoaBieu";
             this.bdnThoiKhoaBieu.PositionItem = this.bindingNavigatorPositionItem;
-            this.bdnThoiKhoaBieu.Size = new System.Drawing.Size(812, 30);
+            this.bdnThoiKhoaBieu.Size = new System.Drawing.Size(850, 30);
             this.bdnThoiKhoaBieu.TabIndex = 74;
             this.bdnThoiKhoaBieu.Text = "bindingNavigator1";
             // 
@@ -394,7 +394,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 56);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(812, 30);
+            this.panel2.Size = new System.Drawing.Size(850, 30);
             this.panel2.TabIndex = 72;
             this.panel2.TabStop = true;
             // 
@@ -499,7 +499,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
-            this.ClientSize = new System.Drawing.Size(812, 600);
+            this.ClientSize = new System.Drawing.Size(850, 600);
             this.Controls.Add(this.dgvThoiKhoaBieu);
             this.Controls.Add(this.bdnThoiKhoaBieu);
             this.Controls.Add(this.panel2);
