@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8224EF57-2A08-4F0F-9B88-6A541B08BC43}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TrieuTapSinhVien</RootNamespace>
+    <AssemblyName>TrieuTapSinhVien</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>VIMARU_ICO.ico</ApplicationIcon>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bussiness\HocPhanInfo.cs" />
+    <Compile Include="Bussiness\ThoiKhoaBieuInfo.cs" />
+    <Compile Include="Controller\HocPhanCtrl.cs" />
+    <Compile Include="Controller\ThoiKhoaBieuCtrl.cs" />
+    <Compile Include="DataLayer\HocPhanData.cs" />
+    <Compile Include="DataLayer\ThoiKhoaBieuData.cs" />
+    <Compile Include="Forms\frmAboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAboutBox.designer.cs">
+      <DependentUpon>frmAboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bussiness\TuKhoaInfo.cs" />
+    <Compile Include="Bussiness\SinhVienInfo.cs" />
+    <Compile Include="Components\CalendarColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\DataService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\frmKetNoiCSDL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\frmKetNoiCSDL.designer.cs">
+      <DependentUpon>frmKetNoiCSDL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\KetNoiCSDL.cs" />
+    <Compile Include="Bussiness\LichTrieuTapInfo.cs" />
+    <Compile Include="Bussiness\NgayTrieuTapInfo.cs" />
+    <Compile Include="Controller\KhoaCtrl.cs" />
+    <Compile Include="Controller\LopNienCheCtrl.cs" />
+    <Compile Include="Controller\LopTinChiCtrl.cs" />
+    <Compile Include="Controller\DSTrieuTapCtrl.cs" />
+    <Compile Include="DataLayer\KhoaData.cs" />
+    <Compile Include="DataLayer\LopNienCheData.cs" />
+    <Compile Include="DataLayer\LopTinChiData.cs" />
+    <Compile Include="DataLayer\DSTrieuTapData.cs" />
+    <Compile Include="Forms\frmThoiKhoaBieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmThoiKhoaBieu.Designer.cs">
+      <DependentUpon>frmThoiKhoaBieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmHocPhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHocPhan.Designer.cs">
+      <DependentUpon>frmHocPhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmInHocPhanDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmInHocPhanDangKy.Designer.cs">
+      <DependentUpon>frmInHocPhanDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmInDSTrieuTap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmInDSTrieuTap.Designer.cs">
+      <DependentUpon>frmInDSTrieuTap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmInLopNienChe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmInLopNienChe.Designer.cs">
+      <DependentUpon>frmInLopNienChe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTrieuTapSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTrieuTapSV.designer.cs">
+      <DependentUpon>frmTrieuTapSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKhoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKhoa.Designer.cs">
+      <DependentUpon>frmKhoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLopNienChe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLopNienChe.Designer.cs">
+      <DependentUpon>frmLopNienChe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLopTinChi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLopTinChi.Designer.cs">
+      <DependentUpon>frmLopTinChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmInLopTinChi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmInLopTinChi.Designer.cs">
+      <DependentUpon>frmInLopTinChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\frmAboutBox.resx">
+      <DependentUpon>frmAboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\frmKetNoiCSDL.resx">
+      <DependentUpon>frmKetNoiCSDL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmThoiKhoaBieu.resx">
+      <DependentUpon>frmThoiKhoaBieu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmHocPhan.resx">
+      <DependentUpon>frmHocPhan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmInHocPhanDangKy.resx">
+      <DependentUpon>frmInHocPhanDangKy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmInDSTrieuTap.resx">
+      <DependentUpon>frmInDSTrieuTap.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmInLopNienChe.resx">
+      <DependentUpon>frmInLopNienChe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTrieuTapSV.resx">
+      <DependentUpon>frmTrieuTapSV.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKhoa.resx">
+      <DependentUpon>frmKhoa.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLopNienChe.resx">
+      <DependentUpon>frmLopNienChe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLopTinChi.resx">
+      <DependentUpon>frmLopTinChi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmInLopTinChi.resx">
+      <DependentUpon>frmInLopTinChi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptDSTrieuTap.rdlc" />
+    <EmbeddedResource Include="Reports\rptLopTinChi.rdlc" />
+    <EmbeddedResource Include="Reports\rptLopNienChe.rdlc" />
+    <EmbeddedResource Include="Reports\rptHocPhanDangKy.rdlc" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\QuanLySVTinChi.Bussiness.SinhVienInfo.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\re.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\QuanLySVTinChi.Bussiness.NgayTrieuTapInfo.datasource" />
+    <None Include="Resources\delete_all_calenda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\TrieuTapSinhVien.Bussiness.HocPhanInfo.datasource" />
+    <None Include="Properties\DataSources\TrieuTapSinhVien.Bussiness.ThoiKhoaBieuInfo.datasource" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\User Group.png" />
+    <None Include="Resources\LopNienChe-icon.png" />
+    <None Include="Resources\Khoa-icon.png" />
+    <None Include="Resources\LopTinChi-icon.png" />
+    <None Include="Resources\Vimaru.jpg" />
+    <None Include="Resources\Logo Vimaru.png" />
+    <None Include="Resources\calendar.png" />
+    <None Include="Resources\book-edit-icon.png" />
+    <Content Include="VIMARU_ICO.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
