@@ -560,7 +560,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmDangKy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "ĐĂNG KÝ HỌC PHẦN";
+            this.Text = "HỌC PHẦN ĐÃ ĐĂNG KÝ";
             ((System.ComponentModel.ISupportInitialize)(this.dgvHocPhan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdnHocPhan)).EndInit();
             this.bdnHocPhan.ResumeLayout(false);
